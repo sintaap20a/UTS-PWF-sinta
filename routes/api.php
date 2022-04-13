@@ -15,6 +15,7 @@ use App\Http\Controllers\ProdukController;
 */
 
 Route::post('/product', [ProdukController::class, 'store']);
+
 Route::get('/product', [ProdukController::class, 'show']);
 Route::get('/product/{id}', [ProdukController::class, 'showById']);
 Route::put('/product/{id}',[ProdukController::class, 'update']);
